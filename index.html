@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/icons/logo.png" type="image/x-icon">
+    <title>La Brocheta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Roboto:wght@400;500;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- fila de logo + nav -->
+    <header class="header container">
+        <a href="#"><img class="header__image" src="./assets/img/icons/logo.png" alt="La brocheta"></a>
+        
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./pages/ubicacion.html" class="nav__link">Ubicacion</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./pages/nosotros.html" class="nav__link">Nosotros</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./pages/galeria.html" class="nav__link">Galeria</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./pages/contacto.html" class="nav__link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <span class="header__btn">
+            <i class="fa-solid fa-bars"></i>
+        </span>
+    </header>
+    <!-- cierre de fila logo + nav -->
+    <main class="main">
+        <!-- fila de información de mi sitio -->
+        <section class="introduction container--nopadding">
+            <div class="introduction__text">
+                <h1 class="introduction__title">Una comida, una experiencia.</h1>
+                <p>Traemos lo mejor de la comida a tu mesa en el mejor restaurante. Comida de alta calidad y un lugar inolvidable
+                    que convenceran a tu paladar.
+                </p>
+                <span class="introduction__button">
+                    <a href="#details" class="introduction__link"> Qué nos hace tan especiales </a>
+                </span>
+            </div>
+            <!-- <img class="introduction__image" src="./assets/img/jumbo.png" alt="Platillo especial y elegante"> -->
+
+        </section>
+
+        <!-- fila de información de mi sitio -->
+        <section id=details class="details">
+            <h2 class="details__title section__title">Lo que nos hace diferentes</h2>
+            <div class="details__container container">
+                <article class="details__item">
+                    <img class="details__image" src="./assets/img/menu.png" alt="icono velocidad" width="150">
+                    <h3 class="details__subtitle">Comida espectacular en minutos</h3>
+                    <p class="details__paragraph">No siempre se puede tener buena comida en poco tiempo. Sin embargo, nuestro reaturante encuentra siempre
+                        un equilibrio entre lo rapido, lo bueno y lo perfecto. Calidad asegurada.
+                    </p>
+                </article>
+                <article class="details__item">
+                    <img class="details__image" src="./assets/img/client.png" alt="icono cliente feliz" width="150">
+                    <h3 class="details__subtitle">Una experiencia inolvidable</h3>
+                    <p class="details__paragraph">Aquí encontrarás un ambiente inolvidable. Nuestros restaurantes se situan en los mejores lugares turisticos
+                        del pais. ¿Hay algo mejor que una bonita vista y una exquisita cena?
+                    </p>
+                </article>
+                <article class="details__item">
+                    <img class="details__image" src="./assets/img/cook.png" alt="icono chef" width="150">
+                    <h3 class="details__subtitle">Los mejores chefs a tu servicio</h3>
+                    <p class="details__paragraph">Nos aseguramos de traer a los mejores chefs del pais. Cada platillo que servimos esta hecho de tiempo,
+                        amor, y esfuerzo. Nuestro clientes certifican la calidad de nuestros platillos.
+                    </p>
+                </article>
+            </div>
+
+
+        </section>
+        <!-- cierre fila de información de mi sitio -->
+
+        <!-- fila de información de mi sitio -->
+        <section class="clients">
+            <h2 class="clients__title section__title">Nuestros clientes hablan</h2>
+            <div class="clients__container container">
+                <article class="clients__item">
+                    <p class="clients__comment">
+                        "Una verdadera expriencia. Seguro que regresaré"
+                    </p>
+                    <p class="clients__firm">
+                        <i> - Ricardo José.</i>
+                    </p>
+                </article>
+                <!-- estos clientes seran mostrados como un slider, por lo que, para seguir con el diseño del wireframe, decidi ocultarlo -->
+                <!-- <article class="clients__item">
+                    <p>
+                        <i> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, fugiat."</i>
+                    </p>
+                    <p>
+                        <b> -Lorem, ipsum.</b>
+                    </p>
+                </article>
+                <article class="clients__item">
+                    <p>
+                        <i> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, fugiat."</i>
+                    </p>
+                    <p>
+                        <b> -Lorem, ipsum.</b>
+                    </p>
+                </article> -->
+            </div>
+
+        </section>
+        <!-- cierre fila de información de mi sitio -->
+
+        <!-- fila de información de mi sitio -->
+        <section class="app container--nopadding">
+            <img class="app__image" src="./assets/img/app.png" alt="mano sosteniendo telefono" width="600px">
+            <div class="app__text">
+                <h2 class="app__title">¿No quieres salir de casa?</h2>
+                <p class="app__subtitle">Tambien puedes ordenar desde tu celular con nuestra app</p>
+                <a class="app__button" href="#">Descargar</a>
+            </div>
+        </section>
+        <!-- cierre fila de información de mi sitio -->
+
+    </main>
+    <!-- inicio del footer -->
+    <footer class="footer ">
+        <div class="footer__container container">
+            <div class="footer__newsletter">
+                <div class="footer__title">
+                    <h3>La mejor comida en el mejor lugar</h3>
+                    <p>¿quieres enterarte de las novedades que tenemos para ti?</p>
+                </div>
+                <div class="footer__form">
+                    <input class="footer__input" type="text">
+                    <button>Suscribeme</button>
+                </div>
+            </div>
+            <div class="footer__resume">
+                <div class="title__resume">
+                    <p>Visitanos en nuestras redes sociales</p>
+                </div>
+
+                <ul class="social__list">
+                    <li class="social__item">
+                        <img src="./assets/img/icons/facebook.png" width="50px" height="50px" alt="">
+                    </li>
+                    <li class="social__item">
+                        <img src="./assets/img/icons/twitter.png" width="50px" height="50px" alt="">
+                    </li>
+                    <li class="social__item">
+                        <img src="./assets/img/icons/instagram.png" width="50px" height="50px" alt="">
+                    </li>
+                    <li class="social__item">
+                        <img src="./assets/img/icons/whatsapp.png" width="50px" height="50px" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__popular">
+                <h4 class="footer__subtitle">Lugares mas visitados</h4>
+                <ul class="footer__list">
+                    <li class="footer__item">CDMX</li>
+                    <li class="footer__item">YUCATAN</li>
+                    <li class="footer__item">Quintana Roo</li>
+                    <li class="footer__item">Baja California</li>
+                </ul>
+            </div>
+            <div class="footer__links">
+                <h4 class="footer__subtitle">Links de utilidad</h4>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Inicio</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Nosotros</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Ubicacion</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Galeria</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__contact">
+                <h4 class="footer__subtitle">Informacion de contacto</h4>
+                <ul class="footer__list">
+                    <li class="footer__item">0180089721</li>
+                    <li class="footer__item">labrocheta@gmail.com</li>
+                    <li class="footer__item">Mexico</li>
+                    <li class="footer__item">www.info.brocheta.com</li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
