@@ -77,7 +77,8 @@
 .introduction {
     display: flex;
     align-items: center;
-    justify-content: space-around
+    justify-content: space-around;
+    overflow: hidden;
 }
 
 .introduction__text {
@@ -93,6 +94,11 @@
 
 .introduction::after {
     content: url('../assets/img/jumbo.png');
+    animation-name: plate;    
+    animation-duration: 20s;    
+    animation-direction: normal;    
+    animation-iteration-count: infinite;    
+    animation-timing-function: linear;
 }
 
 .introduction .introduction__button {
@@ -489,6 +495,17 @@ button {
     font-weight: 600;
     border-radius: 5px;
     width: 50%;
+}
+
+/* Animations */
+@keyframes plate {   
+    from {       
+        transform: rotate(0deg)    
+    }    
+
+    to {  
+        transform: rotate(360deg)    
+    }
 }
 
 @media (max-width: 590.98px) {
