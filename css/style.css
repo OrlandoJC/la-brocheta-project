@@ -357,10 +357,7 @@
 
 .us__container {
     position: relative;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 1fr 2fr;
-    grid-template-areas: "image info" "image table";
+
 }
 
 .us__image {
@@ -378,7 +375,6 @@
     line-height: 1.6;
     padding: 0 10px;
     font-size: 1.2em;
-    grid-area: info;
 }
 
 .us__paragraph {
@@ -388,7 +384,6 @@
 
 .us__table {
     text-align: left;
-    grid-area: table;
     vertical-align: middle;
     font-size: 1.1em;
 }
@@ -440,18 +435,7 @@
 
 /* contact */
 
-.contact__form {
-    font-size: 1.2rem;
-    display: inline-block;
-    margin: 0 auto;
-    padding: 10px;
-    box-shadow: -11px 11px 38px -2px rgba(0, 0, 0, 0.08);
-    -webkit-box-shadow: -11px 11px 38px -2px rgba(0, 0, 0, 0.08);
-    -moz-box-shadow: -11px 11px 38px -2px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
-    border: 1px solid #eff0f0;
-    border-radius: 10px;
-}
+
 
 .contact__container {
     display: block;
@@ -565,7 +549,6 @@ button {
         display: none
     }
     .us__container {
-        grid-template-areas: "info info" "table table";
         width: 80%;
     }
 

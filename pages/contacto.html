@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Roboto:wght@400;500;900&display=swap"
@@ -18,132 +20,165 @@
 <body>
     <!-- fila de logo + nav -->
     <header class="header container">
-            <a href="../index.html">
-                <img class="header__image" src="../assets/img/icons/logo.png" alt="La brocheta">
-            </a>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="../index.html" class="nav__link">Inicio</a>
-                </li>
-                <li class="nav__item">
-                    <a href="ubicacion.html" class="nav__link">Ubicacion</a>
-                </li>
-                <li class="nav__item">
-                    <a href="nosotros.html" class="nav__link">Nosotros</a>
-                </li>
-                <li class="nav__item">
-                    <a href="galeria.html" class="nav__link">Galeria</a>
-                </li>
-                <li class="nav__item">
-                    <a href="contacto.html" class="nav__link">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/img/icons/logo.png" alt="" width="80" height="80">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex  justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link text-dark">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ubicacion.html" class="nav-link text-dark fw-bold">Ubicacion</a>
+                        </li>
+                        <li>
+                            <a href="nosotros.html" class="nav-link text-dark fw-bold">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="galeria.html" class="nav-link text-dark fw-bold">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link text-dark">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <span class="header__btn">
-            <i class="fa-solid fa-bars"></i>
-        </span>
     </header>
     <!-- cierre de fila logo + nav -->
     <main>
         <!-- fila de información de mi sitio -->
-        <section class="contact container">
-            <h1 class="contact__title">Contactanos. Queremos oirte.</h1>
-            <!-- formulario de contacto -->
-            <div class="contact__container">
-                <form class="contact__form" action="#">
-                    <label for="name">Nombre</label>
-                    <input class="contact__name" type="text" placeholder="Nombre" name="name">
-                    <label for="email">Email</label>
-                    <input class="contact__email" type="email" placeholder="email" name="email">
-                    <br>
-                    <br>
-                    <input class="contact__asunto" type="text" placeholder="Asunto" name="asunto" size="60">
-                    <br>
-                    <br>
-                    <label for="Mensaje"></label>
-                    <textarea placeholder="mensaje" name="mensaje" rows=12 cols=60></textarea>
-                    <br>
-                    <button>Enviar</button>
-                </form>
+        <div class="contact container px-1 py-5 mx-auto">
+            <div class="row d-flex justify-content-center rounded">
+                <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+                    <div class="card">
+                        <form class="form-card" onsubmit="event.preventDefault()">
+                            <div class="row justify-content-between text-left">
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label class="form-control-label px-3">Nombre
+                                        <span class="text-danger"> *</span>
+                                    </label>
+                                    <input type="text" id="fname" name="fname" placeholder="Nombre" onblur="validate(1)"> </div>
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label class="form-control-label px-3">Apellido
+                                        <span class="text-danger"> *</span>
+                                    </label>
+                                    <input type="text" id="lname" name="lname" placeholder="Apellido" onblur="validate(2)"> </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                                <div class="form-group col-sm-12 flex-column d-flex">
+                                    <label class="form-control-label px-3">Correo
+                                        <span class="text-danger"> *</span>
+                                    </label>
+                                    <input type="text" id="email" name="email" placeholder="Correo" onblur="validate(3)"> </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                                <div class="form-group col-sm-12 flex-column d-flex">
+                                    <label class="form-control-label px-3">Asunto
+                                        <span class="text-danger"> *</span>
+                                    </label>
+                                    <input type="text" id="job" name="job" placeholder="Asunto" onblur="validate(5)"> </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                                <div class="form-group col-12 flex-column d-flex">
+                                    <label class="form-control-label px-3">Mensaje
+                                        <span class="text-danger"> *</span>
+                                    </label>
+                                    <input type="text" id="ans" name="ans" placeholder="Mensaje" onblur="validate(6)"> </div>
+                            </div>
+                            <div class="row justify-content-end">
+                                <div class="form-group col-sm-12">
+                                    <button type="submit" class="btn-block btn-primary">Contactar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-
-            <!-- cierre de form contacto -->
-        </section>
+        </div>
         <!-- cierre de fila de información de mi sitio -->
     </main>
     <!-- inicio de footer -->
     <footer class="footer ">
-            <div class="footer__container container">
-                <div class="footer__newsletter">
-                    <div class="footer__title">
-                        <h3>La mejor comida en el mejor lugar</h3>
-                        <p>¿quieres enterarte de las novedades que tenemos para ti?</p>
-                    </div>
-                    <div class="footer__form">
-                        <input class="footer__input" type="text">
-                        <button>Suscribeme</button>
-                    </div>
+        <div class="footer__container container">
+            <div class="footer__newsletter">
+                <div class="footer__title">
+                    <h3>La mejor comida en el mejor lugar</h3>
+                    <p>¿quieres enterarte de las novedades que tenemos para ti?</p>
                 </div>
-                <div class="footer__resume">
-                    <div class="title__resume">
-                        <p>Visitanos en nuestras redes sociales</p>
-                    </div>
-    
-                    <ul class="social__list">
-                        <li class="social__item">
-                            <img src="../assets/img/icons/facebook.png" width="50px" height="50px" alt="">
-                        </li>
-                        <li class="social__item">
-                            <img src="../assets/img/icons/twitter.png" width="50px" height="50px" alt="">
-                        </li>
-                        <li class="social__item">
-                            <img src="../assets/img/icons/instagram.png" width="50px" height="50px" alt="">
-                        </li>
-                        <li class="social__item">
-                            <img src="../assets/img/icons/whatsapp.png" width="50px" height="50px" alt="">
-                        </li>
-                    </ul>
+                <div class="footer__form">
+                    <input class="footer__input" type="text">
+                    <button>Suscribeme</button>
                 </div>
-                <div class="footer__popular">
-                    <h4 class="footer__subtitle">Lugares mas visitados</h4>
-                    <ul class="footer__list">
-                        <li class="footer__item">CDMX</li>
-                        <li class="footer__item">YUCATAN</li>
-                        <li class="footer__item">Quintana Roo</li>
-                        <li class="footer__item">Baja California</li>
-                    </ul>
-                </div>
-                <div class="footer__links">
-                    <h4 class="footer__subtitle">Links de utilidad</h4>
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Inicio</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Nosotros</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Ubicacion</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Galeria</a>
-                        </li>
-                        <li class="footer__item">
-                            <a class="footer__link" href="#">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__contact">
-                    <h4 class="footer__subtitle">Informacion de contacto</h4>
-                    <ul class="footer__list">
-                        <li class="footer__item">0180089721</li>
-                        <li class="footer__item">labrocheta@gmail.com</li>
-                        <li class="footer__item">Mexico</li>
-                        <li class="footer__item">www.info.brocheta.com</li>
-                    </ul>
-                </div>
-    
             </div>
-        </footer>
+            <div class="footer__resume">
+                <div class="title__resume">
+                    <p>Visitanos en nuestras redes sociales</p>
+                </div>
+
+                <ul class="social__list">
+                    <li class="social__item">
+                        <img src="../assets/img/icons/facebook.png" width="50px" height="50px" alt="">
+                    </li>
+                    <li class="social__item">
+                        <img src="../assets/img/icons/twitter.png" width="50px" height="50px" alt="">
+                    </li>
+                    <li class="social__item">
+                        <img src="../assets/img/icons/instagram.png" width="50px" height="50px" alt="">
+                    </li>
+                    <li class="social__item">
+                        <img src="../assets/img/icons/whatsapp.png" width="50px" height="50px" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__popular">
+                <h4 class="footer__subtitle">Lugares mas visitados</h4>
+                <ul class="footer__list">
+                    <li class="footer__item">CDMX</li>
+                    <li class="footer__item">YUCATAN</li>
+                    <li class="footer__item">Quintana Roo</li>
+                    <li class="footer__item">Baja California</li>
+                </ul>
+            </div>
+            <div class="footer__links">
+                <h4 class="footer__subtitle">Links de utilidad</h4>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Inicio</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Nosotros</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Ubicacion</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Galeria</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__contact">
+                <h4 class="footer__subtitle">Informacion de contacto</h4>
+                <ul class="footer__list">
+                    <li class="footer__item">0180089721</li>
+                    <li class="footer__item">labrocheta@gmail.com</li>
+                    <li class="footer__item">Mexico</li>
+                    <li class="footer__item">www.info.brocheta.com</li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 </body>
