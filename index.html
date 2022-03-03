@@ -9,6 +9,8 @@
     <title>La Brocheta</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,43 +21,52 @@
 <body>
     <!-- fila de logo + nav -->
     <header class="header container">
-        <a href="#"><img class="header__image" src="./assets/img/icons/logo.png" alt="La brocheta"></a>
-        
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="index.html" class="nav__link">Inicio</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./pages/ubicacion.html" class="nav__link">Ubicacion</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./pages/nosotros.html" class="nav__link">Nosotros</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./pages/galeria.html" class="nav__link">Galeria</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./pages/contacto.html" class="nav__link">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/icons/logo.png" alt="" width="80" height="80">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex  justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link text-dark">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/ubicacion.html" class="nav-link text-dark fw-bold">Ubicacion</a>
+                        </li>
+                        <li>
+                            <a href="./pages/nosotros.html" class="nav-link text-dark fw-bold">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/galeria.html" class="nav-link text-dark fw-bold">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/contacto.html" class="nav-link text-dark">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <span class="header__btn">
-            <i class="fa-solid fa-bars"></i>
-        </span>
+
     </header>
     <!-- cierre de fila logo + nav -->
     <main class="main">
         <!-- fila de información de mi sitio -->
-        <section class="introduction container--nopadding">
-            <div class="introduction__text">
-                <h1 class="introduction__title">Una comida, una experiencia.</h1>
-                <p>Traemos lo mejor de la comida a tu mesa en el mejor restaurante. Comida de alta calidad y un lugar inolvidable
-                    que convenceran a tu paladar.
-                </p>
-                <span class="introduction__button">
-                    <a href="#details" class="introduction__link"> Qué nos hace tan especiales </a>
-                </span>
+        <section class="introduction container">
+            <div class="introduction__text row">
+                <div class="col-lg-12">
+                    <h1 class="introduction__title">Una comida, una experiencia.</h1>
+                    <p>Traemos lo mejor de la comida a tu mesa en el mejor restaurante. Comida de alta calidad y un lugar inolvidable
+                        que convenceran a tu paladar.
+                    </p>
+                    <span class="introduction__button shadow p-3 mb-5 bg-body ">
+                        <a href="#details" class="introduction__link"> Qué nos hace tan especiales </a>
+                    </span>
+                </div>
             </div>
             <!-- <img class="introduction__image" src="./assets/img/jumbo.png" alt="Platillo especial y elegante"> -->
 
@@ -64,28 +75,30 @@
         <!-- fila de información de mi sitio -->
         <section id=details class="details">
             <h2 class="details__title section__title">Lo que nos hace diferentes</h2>
-            <div class="details__container container">
-                <article class="details__item">
-                    <img class="details__image" src="./assets/img/menu.png" alt="icono velocidad" width="150">
-                    <h3 class="details__subtitle">Comida espectacular en minutos</h3>
-                    <p class="details__paragraph">No siempre se puede tener buena comida en poco tiempo. Sin embargo, nuestro reaturante encuentra siempre
-                        un equilibrio entre lo rapido, lo bueno y lo perfecto. Calidad asegurada.
-                    </p>
-                </article>
-                <article class="details__item">
-                    <img class="details__image" src="./assets/img/client.png" alt="icono cliente feliz" width="150">
-                    <h3 class="details__subtitle">Una experiencia inolvidable</h3>
-                    <p class="details__paragraph">Aquí encontrarás un ambiente inolvidable. Nuestros restaurantes se situan en los mejores lugares turisticos
-                        del pais. ¿Hay algo mejor que una bonita vista y una exquisita cena?
-                    </p>
-                </article>
-                <article class="details__item">
-                    <img class="details__image" src="./assets/img/cook.png" alt="icono chef" width="150">
-                    <h3 class="details__subtitle">Los mejores chefs a tu servicio</h3>
-                    <p class="details__paragraph">Nos aseguramos de traer a los mejores chefs del pais. Cada platillo que servimos esta hecho de tiempo,
-                        amor, y esfuerzo. Nuestro clientes certifican la calidad de nuestros platillos.
-                    </p>
-                </article>
+            <div class="container">
+                <div class="row">
+                    <article class="details__item col-lg-3 col-sm-12">
+                        <img class="details__image" src="./assets/img/menu.png" alt="icono velocidad" width="150">
+                        <h3 class="details__subtitle">Comida espectacular en minutos</h3>
+                        <p class="details__paragraph">No siempre se puede tener buena comida en poco tiempo. Sin embargo, nuestro reaturante encuentra
+                            siempre un equilibrio entre lo rapido, lo bueno y lo perfecto. Calidad asegurada.
+                        </p>
+                    </article>
+                    <article class="details__item col-lg-3 col-sm-12">
+                        <img class="details__image" src="./assets/img/client.png" alt="icono cliente feliz" width="150">
+                        <h3 class="details__subtitle">Una experiencia inolvidable</h3>
+                        <p class="details__paragraph">Aquí encontrarás un ambiente inolvidable. Nuestros restaurantes se situan en los mejores lugares
+                            turisticos del pais. ¿Hay algo mejor que una bonita vista y una exquisita cena?
+                        </p>
+                    </article>
+                    <article class="details__item col-lg-3 col-sm-12">
+                        <img class="details__image" src="./assets/img/cook.png" alt="icono chef" width="150">
+                        <h3 class="details__subtitle">Los mejores chefs a tu servicio</h3>
+                        <p class="details__paragraph">Nos aseguramos de traer a los mejores chefs del pais. Cada platillo que servimos esta hecho de tiempo,
+                            amor, y esfuerzo. Nuestro clientes certifican la calidad de nuestros platillos.
+                        </p>
+                    </article>
+                </div>
             </div>
 
 
@@ -104,23 +117,6 @@
                         <i> - Ricardo José.</i>
                     </p>
                 </article>
-                <!-- estos clientes seran mostrados como un slider, por lo que, para seguir con el diseño del wireframe, decidi ocultarlo -->
-                <!-- <article class="clients__item">
-                    <p>
-                        <i> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, fugiat."</i>
-                    </p>
-                    <p>
-                        <b> -Lorem, ipsum.</b>
-                    </p>
-                </article>
-                <article class="clients__item">
-                    <p>
-                        <i> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, fugiat."</i>
-                    </p>
-                    <p>
-                        <b> -Lorem, ipsum.</b>
-                    </p>
-                </article> -->
             </div>
 
         </section>
@@ -212,6 +208,10 @@
 
         </div>
     </footer>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 </body>
 
 </html>
