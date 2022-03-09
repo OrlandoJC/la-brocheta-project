@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font
+}
+
+
+/* Overwriting bootstrap css */
+
+.text-dark {
+    color: black;
+    font-weight: bold
+}
+
+/* Overwriting bootstrap css */
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.container--nopadding {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.section__title {
+    padding-top: 50px;
+}
+
+.section {
+    padding: 50px 0px;
+}
+
