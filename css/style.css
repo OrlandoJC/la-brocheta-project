@@ -14,18 +14,36 @@
   width: 90%;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 50px 0; }
+  padding: 50px 0px; }
 
 .container--nopadding {
   width: 90%;
   max-width: 1300px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0px 0px; }
 
 .section__title {
   padding-top: 50px; }
 
 .section {
   padding: 50px 0px; }
+
+.title, .details__title, .clients__title {
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: bold; }
+
+.btn--callout {
+  background-color: #ff5c70; }
+
+.btn--download {
+  background-color: #ec3c52; }
+
+.btn--suscribe {
+  background-color: #5d5962; }
+
+.btn--submit {
+  background-color: #007bff; }
 
 .header {
   position: relative;
@@ -69,9 +87,9 @@
     line-height: 2em; }
   .introduction__title {
     font-size: 2.8rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    font-weight: bolder; }
   .introduction__button {
-    background-color: #ff5c70;
     display: inline-block;
     padding: .6em;
     margin-top: 15px;
@@ -103,8 +121,6 @@
     display: flex;
     justify-content: center; }
   .details__title {
-    font-size: 1.7rem;
-    text-align: center;
     color: black; }
   .details__item {
     margin: 5% 3%;
@@ -124,8 +140,7 @@
   left: 0px;
   color: white; }
   .clients__title {
-    text-align: center;
-    font-size: 1.5rem; }
+    color: white; }
   .clients__item {
     width: 50%;
     margin: 0 auto;
@@ -156,7 +171,6 @@
     padding: 7px;
     margin-top: 10px;
     display: inline-block;
-    background: #ec3c52;
     text-decoration: none;
     color: white;
     border-radius: 10px;
@@ -350,7 +364,6 @@ textarea {
 button {
   padding: 10px;
   border: none;
-  background-color: #5d5962;
   color: #fff;
   font-weight: 600;
   border-radius: 5px;

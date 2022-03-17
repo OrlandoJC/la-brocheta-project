@@ -1,0 +1,12 @@
+$btns: (
+    callout : #ff5c70,
+    download : #ec3c52,
+    suscribe : #5d5962,
+    submit : #007bff
+);
+
+@each $btn, $color in $btns {
+    .btn--#{$btn} {
+        background-color: $color
+    }
+}

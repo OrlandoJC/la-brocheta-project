@@ -1,3 +1,5 @@
+@import 'mixins';
+
 * {
     padding: 0;
     margin: 0;
@@ -16,16 +18,11 @@
 /* Overwriting bootstrap css */
 
 .container {
-    width: 90%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 50px 0;
+    @include container(50px, 0px);
 }
 
 .container--nopadding {
-    width: 90%;
-    max-width: 1300px;
-    margin: 0 auto;
+    @include container(0px, 0px);
 }
 
 .section__title {
@@ -36,3 +33,8 @@
     padding: 50px 0px;
 }
 
+.title {
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: bold;
+}

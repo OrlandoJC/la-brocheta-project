@@ -1,5 +1,6 @@
 @import "_base";
 @import "_utils";
+@import "_maps";
 
 .header {
     position: relative;
@@ -62,10 +63,10 @@
     &__title {
         font-size: 2.8rem;
         margin-bottom: 2rem;
+        font-weight: bolder;
     }
     
     &__button {
-        background-color: $button-primary;
         display: inline-block;
         padding: .6em;
         margin-top: 15px;
@@ -115,8 +116,7 @@
     }
 
     &__title {
-        font-size: 1.7rem;
-        text-align: center;
+        @extend .title;
         color: $font-black;
     }
 
@@ -142,11 +142,11 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    color: white;
+    color : white;
 
     &__title {
-        text-align: center;
-        font-size: 1.5rem;
+        @extend .title;
+        color: white;
     }
     
     &__item {
@@ -193,7 +193,6 @@
         padding: 7px;
         margin-top: 10px;
         display: inline-block;
-        background: rgb(236, 60, 82);
         text-decoration: none;
         color: white;
         border-radius: 10px;
@@ -472,7 +471,6 @@ textarea {
 button {
     padding: 10px;
     border: none;
-    background-color: $secondary-color;
     color: #fff;
     font-weight: 600;
     border-radius: 5px;
