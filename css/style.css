@@ -33,6 +33,9 @@
   text-align: center;
   font-weight: bold; }
 
+.link--selected {
+  color: #ec3c52; }
+
 .btn--callout {
   background-color: #ff5c70; }
 
