@@ -65,37 +65,38 @@
         <div class="contact container px-1 py-5 mx-auto">
             <div class="row d-flex justify-content-center rounded">
                 <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+                    <h1 class="contact__title">¿Tienes dudas? Contactanos</h1>
                     <div class="card">
-                        <form class="form-card" onsubmit="event.preventDefault()">
+                        <form class="form-card " onsubmit="event.preventDefault()">
                             <div class="row justify-content-between text-left">
                                 <div class="form-group col-sm-6 flex-column d-flex">
-                                    <label class="form-control-label px-3">Nombre
+                                    <label class="form-control-label px-3 contact__label">Nombre
                                         <span class="text-danger"> *</span>
                                     </label>
                                     <input type="text" id="fname" name="fname" placeholder="Nombre" onblur="validate(1)"> </div>
                                 <div class="form-group col-sm-6 flex-column d-flex">
-                                    <label class="form-control-label px-3">Apellido
+                                    <label class="form-control-label px-3 contact__label">Apellido
                                         <span class="text-danger"> *</span>
                                     </label>
                                     <input type="text" id="lname" name="lname" placeholder="Apellido" onblur="validate(2)"> </div>
                             </div>
                             <div class="row justify-content-between text-left">
                                 <div class="form-group col-sm-12 flex-column d-flex">
-                                    <label class="form-control-label px-3">Correo
+                                    <label class="form-control-label px-3 contact__label">Correo
                                         <span class="text-danger"> *</span>
                                     </label>
                                     <input type="text" id="email" name="email" placeholder="Correo" onblur="validate(3)"> </div>
                             </div>
                             <div class="row justify-content-between text-left">
                                 <div class="form-group col-sm-12 flex-column d-flex">
-                                    <label class="form-control-label px-3">Asunto
+                                    <label class="form-control-label px-3 contact__label">Asunto
                                         <span class="text-danger"> *</span>
                                     </label>
                                     <input type="text" id="job" name="job" placeholder="Asunto" onblur="validate(5)"> </div>
                             </div>
                             <div class="row justify-content-between text-left">
                                 <div class="form-group col-12 flex-column d-flex">
-                                    <label class="form-control-label px-3">Mensaje
+                                    <label class="form-control-label px-3 contact__label">Mensaje
                                         <span class="text-danger"> *</span>
                                     </label>
                                     <input type="text" id="ans" name="ans" placeholder="Mensaje" onblur="validate(6)"> </div>

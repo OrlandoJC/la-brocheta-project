@@ -97,7 +97,6 @@
     padding: .6em;
     margin-top: 15px;
     border-radius: 50px;
-    line-height: 3.5rem;
     text-align: center;
     transition: 1s ease; }
   .introduction__button:hover {
@@ -195,6 +194,8 @@
     grid-template-areas: "news news news news" "resumen popular links contact";
     row-gap: 20px;
     column-gap: 30px; }
+  .footer__title {
+    font-size: 1.3rem; }
   .footer__newsletter {
     display: flex;
     justify-content: space-between;
@@ -218,7 +219,9 @@
     width: 30%;
     display: inline-block; }
   .footer__subtitle {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bold; }
   .footer .title__resume {
     display: inline-block; }
   .footer__item {
@@ -245,6 +248,9 @@
   .footer .social__item {
     display: inline-block;
     margin-left: 20px; }
+    .footer .social__item img {
+      width: 43px;
+      height: auto; }
   .footer__link {
     text-decoration: none;
     color: black; }
@@ -272,7 +278,8 @@
 
 /* us */
 .us__title {
-  color: #945438; }
+  color: #945438;
+  font-weight: bold; }
 
 .us__container {
   position: relative; }
@@ -299,7 +306,8 @@
 .us__table {
   text-align: left;
   vertical-align: middle;
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  margin-left: 29px; }
   .us__table td:first-child {
     display: inline-block;
     padding: 20px 0px;
@@ -319,6 +327,8 @@
       border-radius: 20px; }
   .us__table th:nth-child(2) {
     margin-left: 20px; }
+  .us__table tbody tr td:nth-child(even) {
+    padding: 0px 0px 0px 10px; }
 
 /* Location */
 .map {
@@ -330,11 +340,20 @@
     color: white;
     text-align: center;
     margin: 30px 0;
-    font-size: 1.9em; }
+    font-size: 1.9em;
+    font-weight: bold; }
   .map__map {
     border-radius: 10px; }
 
 /* contact */
+.contact form {
+  padding: 20px;
+  box-shadow: -11px 12px 24px -4px rgba(97, 97, 97, 0.55);
+  -webkit-box-shadow: -11px 12px 24px -4px rgba(97, 97, 97, 0.55);
+  -moz-box-shadow: -11px 12px 24px -4px rgba(97, 97, 97, 0.55); }
+  .contact form .form__card {
+    border: none; }
+
 .contact__container {
   display: block;
   text-align: center; }
@@ -343,7 +362,12 @@
   text-align: center;
   margin: 20px 40px;
   padding-bottom: 20px;
-  font-size: 1.9rem; }
+  font-size: 1.9rem;
+  color: #945438;
+  font-weight: bold; }
+
+.contact .contact__label {
+  font-weight: bold; }
 
 input[type=text],
 input[type=email],
@@ -395,6 +419,8 @@ button {
     flex-flow: column; }
   .app {
     justify-content: center; }
+  .clients__item {
+    width: 90%; }
   .app__text {
     width: 90%;
     text-align: center;
@@ -402,7 +428,21 @@ button {
   .app__image {
     display: none; }
   .map__map {
-    max-width: 90%; } }
+    max-width: 90%; }
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "news news"  "resumen resumen" "popular popular" "links links"  "contact contact";
+    row-gap: 20px; }
+  .footer__resume {
+    align-self: start; }
+  .footer__popular {
+    justify-self: start; }
+  .footer__links {
+    justify-self: start; }
+  .footer__contact {
+    justify-self: start; } }
 
 @media (max-width: 991.98px) {
   .introduction {
@@ -437,10 +477,4 @@ button {
     padding: 20px 0; }
   .footer__form {
     margin: 20px 0;
-    width: 90%; }
-  .footer__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "news news" "links popular" "resumen contact";
-    row-gap: 20px; } }
+    width: 90%; } }
